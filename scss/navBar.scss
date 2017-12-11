@@ -1,0 +1,116 @@
+.navWrapper {
+  margin-top: 200px;
+  width: 100vw;
+  height: 50px;
+  z-index: 200;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: relative;
+}
+.navBar {
+  margin-top: 200px;
+  width: 100vw;
+  height: 50px;
+  z-index: 200;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  color: #2D2D2D;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.leftNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 10px;
+  img {
+    width: 40px;
+    height: 100%;
+    margin: 0 10px;
+    margin-top: 5px;
+  }
+}
+
+
+.rightNav {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+
+  a {
+    display: block;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  svg {
+    width: 30px;
+    height: 100%;
+    margin: 5px 5px 0 5px;
+  }
+
+  svg .upload-icon {
+    fill: #262626;
+    transition: all 300ms ease-in-out;
+  }
+
+  svg:hover .upload-icon {
+    fill: grey;
+  }
+
+}
+.stickyNav {
+  top: 0;
+  margin-top: 0;
+  position: fixed;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+  border-radius: 15px;
+  margin: 0 10px;
+  .searchIcon {
+    fill: #3E3E3F;
+    vertical-align: middle;
+    color: #b5b5b5;
+    display: block;
+    margin-left: 20px;
+  }
+  #searchTxt[type=text] {
+    width: 180px;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    @extend %animation;
+    border: 0;
+    color: #3E3E3F;
+    // font-weight: 600;
+    // height: 100%;
+    // line-height: 20px;
+    // padding: 0;
+    // text-overflow: ellipsis;
+    // width: 100%;
+  }
+  #searchTxt[type=text]:hover {
+      outline: none;
+      width: 280px;
+  }
+  #searchTxt[type=text]:focus {
+    outline-width: 0;
+  }
+}

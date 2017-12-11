@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>infinish.ed</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="ties_icon" src="../ties_icon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="js/vendor/jquery.typed.js"></script>
+  <script src="js/vendor/tilt.jquery.min.js"></script>
+  <script src="js/vendor/papaparse.min.js"></script>
+
+</head>
+<body>
+  <div class="topOverlay">
+    <header class="header">
+      <div class="overlay"></div>
+      <a href="index.html">
+        <span class="headerTxt"></span>
+      </a>
+      <div class="aboutContent">
+        <p class="aboutTxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio mollitia aperiam perferendis soluta, vel facilis nulla id, sunt necessitatibus corrupti exercitationem magni. Magnam laudantium placeat, mollitia facilis, laborum aliquam.
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio mollitia aperiam perferendis soluta, vel facilis nulla id, sunt necessitatibus corrupti exercitationem magni. Magnam laudantium placeat, mollitia facilis, laborum aliquam.
+        </p>
+      </div>
+      <div class="returnArrow" onclick="closeAbout()">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <path d="M256,213.7L256,213.7L256,213.7l174.2,167.2c4.3,4.2,11.4,4.1,15.8-0.2l30.6-29.9c4.4-4.3,4.5-11.3,0.2-15.5L264.1,131.1
+            c-2.2-2.2-5.2-3.2-8.1-3c-3-0.1-5.9,0.9-8.1,3L35.2,335.3c-4.3,4.2-4.2,11.2,0.2,15.5L66,380.7c4.4,4.3,11.5,4.4,15.8,0.2L256,213.7
+            z"/>
+        </svg>
+      </div>
+    </header>
+
+    <div class="navWrapper">
+      <nav class="navBar">
+          <div class="leftNav">
+            <div class="searchBar">
+              <svg class="searchIcon" height="15" width="15" viewBox="0 0 24 24" aria-label="Search icon" role="img" data-reactid="30">
+                <title data-reactid="31">Search icon</title>
+                <path d="M10.00,16.00 C6.69,16.00 4.00,13.31 4.00,10.00 C4.00,6.69 6.69,4.00 10.00,4.00 C13.31,4.00 16.00,6.69 16.00,10.00 C16.00,13.31 13.31,16.00 10.00,16.00 M23.12,18.88 L18.86,14.62 C19.59,13.24 20.00,11.67 20.00,10.00 C20.00,4.48 15.52,0.00 10.00,0.00 C4.48,0.00 0.00,4.48 0.00,10.00 C0.00,15.52 4.48,20.00 10.00,20.00 C11.67,20.00 13.24,19.59 14.62,18.86 L18.88,23.12 C20.05,24.29 21.95,24.29 23.12,23.12 C24.29,21.95 24.29,20.05 23.12,18.88" data-reactid="32"></path>
+              </svg>
+              <input id="searchTxt" onkeyup="search()" name="search" placeholder="Discover By Title" type="text" data-list=".list">
+            </div>
+          </div>
+          <div class="rightNav">
+          <a class="upload" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchDgBZgUfMBfkxAb0KdgMZPlGLYoBYG096xkF0QiUQOYSySw/viewform?usp=sf_link">
+            <svg data-name="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.11 83.33">
+              <title>upload</title>
+              <path class="upload-icon" d="M45.09,12.89a2.63,2.63,0,0,0-1.87-.73,2.79,2.79,0,0,0-1.87.73l-14,14.71a2.59,2.59,0,0,0-.52,2.75A2.43,2.43,0,0,0,29,31.89l4.58,0-.07,20.87a3.68,3.68,0,0,0,3.6,3.74H49.28a3.68,3.68,0,0,0,3.6-3.74l-.07-20.86,4.58,0a2.42,2.42,0,0,0,2.23-1.55,2.58,2.58,0,0,0-.52-2.74Zm0,0"/><path class="upload-icon" d="M69.44,41.31a3.69,3.69,0,0,0-3.93,3.37V63.45a1.49,1.49,0,0,1-1.6,1.39h-41a1.54,1.54,0,0,1-1.65-1.39V44.67a3.63,3.63,0,0,0-3.87-3.37,3.63,3.63,0,0,0-3.87,3.37V63.45c0,4.49,4.17,8.15,9.39,8.15h41c5.22,0,9.46-3.66,9.46-8.15V44.67a3.69,3.69,0,0,0-3.93-3.37Zm0,0"/>
+            </svg>
+          </a>
+          <a class="about" onclick="openAbout()">About</a>
+          <a class="login">Login</a>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <article class="threads">
+      </article>
+      <div class="filterButton">
+        <div class="right contentButton">
+          <a class="button bottom" id="filterIdea" onclick="filter('Idea')">Idea</a>
+          <a class="button middle" id="filterProject" onclick="filter('Project');">Project</a>
+          <a class="button top" id="filterOrganization" onclick="filter('Organization')">Organization</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id='modalPopup'>
+    <a class="modal_close">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 313.4 313.4" style="enable-background:new 0 0 313.4 313.4;" xml:space="preserve">
+        <style type="text/css">.X {fill:black;}</style>
+        <title>X</title>
+        <polygon class="X" points="313.4,26.2 287.2,0 156.7,130.5 26.2,0 0,26.2 130.5,156.7 0,287.2 26.2,313.4 156.7,182.9 287.2,313.4 313.4,287.2 182.9,156.7 "/>
+      </svg>
+    </a>
+    <div class="projectSide">
+      <div class="projectHead">
+        <div class="top">
+          <h4 class="cat"></h4>
+          <h1 class="title"></h1>
+        </div>
+        <h3 class="summary"></h3>
+      </div>
+      <div class="projectDetails">
+        <div class="projectImages"></div>
+        <div class="projectInfo">
+          <h1>Problem</h1>
+          <hr>
+          <p class="prob"></p><br>
+          <h1>Solution</h1>
+          <hr>
+          <p class="sol"></p><br>
+          <h1>Final</h1>
+          <hr>
+          <p class="fin"></p><br>
+        </div>
+        <footer>
+          <p class="published"></p>
+          <a target="_blank" class="gDrive">More Info</a>
+        </footer>
+      </div>
+    </div>
+    <div class="devSide">
+      <h1 class="designer">
+        Designers
+      </h1>
+      <hr>
+      <div class="team"></div>
+    <script src="js/vendor/jquery.leanModal.js"></script>
+    </div>
+  </div>
+</body>
+<script src="js/typed.js"></script>
+<script src="js/search.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/main.js"></script>
+<script src="js/processData.js"></script>
+<script src="js/modalPopup.js"></script>
+</html>

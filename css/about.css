@@ -1,0 +1,10 @@
+.aboutContent {
+  max-width: 70vw;
+  color: white;
+  display: none;
+  flex-direction: column;
+  z-index: 2000;
+  position: fixed;
+  opacity: 0; }
+
+/*# sourceMappingURL=about.css.map */

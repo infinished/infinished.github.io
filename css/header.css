@@ -1,0 +1,78 @@
+/*
+Error: Undefined mixin 'transitions'.
+        on line 44 of scss/header.scss, in `transitions'
+        from line 44 of scss/header.scss
+
+39:   svg {
+40:     height: 75px;
+41:     width: 75px;
+42:     fill: rgba(255, 255, 255, .8);
+43:   }
+44:   @include transitions(200ms);
+45: }
+46: .returnArrow:hover {
+47:   transform: translateY(-20px);
+48:   @include transitions(200ms);
+49: }
+
+Backtrace:
+scss/header.scss:44:in `transitions'
+scss/header.scss:44
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'transitions'.\A         on line 44 of scss/header.scss, in `transitions'\A         from line 44 of scss/header.scss\A \A 39:   svg {\A 40:     height: 75px;\A 41:     width: 75px;\A 42:     fill: rgba(255, 255, 255, .8);\A 43:   }\A 44:   @include transitions(200ms);\A 45: }\A 46: .returnArrow:hover {\A 47:   transform: translateY(-20px);\A 48:   @include transitions(200ms);\A 49: }"; }

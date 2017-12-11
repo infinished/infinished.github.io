@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Rufina:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Quattrocento:400,700');
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Quattrocento', serif;
+/*==========================================================================
+Global Variables
+==========================================================================*/
+$icon-lineWidth: .25em;
+$main-font-color: #112725;
+$lighten: 20%;
+@import 'animations.scss';
+@mixin transitions($speed: 0ms) {
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  -ms-transition: all $speed ease-in-out;
+  -o-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+  @content;
+}
+@mixin delay($delay: 0ms) {
+  -webkit-transition-delay: all $delay ease-in-out;
+  -moz-transition-delay: all $delay ease-in-out;
+  -ms-transition-delay: all $delay ease-in-out;
+  -o-transition-delay: all $delay ease-in-out;
+  transition-delay: all $delay ease-in-out;
+  @content;
+}
+/*==========================================================================
+Base styles:
+==========================================================================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    letter-spacing: .02em;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
+    color: $main-font-color;
+    overflow-x: hidden;
+    height: 100%
+  }
+img {
+    max-width: 100%;
+  }
+main {
+  @extend %animation;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF !important;
+  z-index: -2;
+  padding-bottom: 40px;
+}
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+}
+/*==========================================================================
+Navigation
+==========================================================================*/
+@import 'navBar.scss';
+/*==========================================================================
+Header
+==========================================================================*/
+@import 'header.scss';
+@import 'about.scss';
+/*==========================================================================
+Content Buttons
+==========================================================================*/
+@import 'contentButtons.scss';
+/*==========================================================================
+Main Content
+==========================================================================*/
+@import 'threads.scss';
+@import 'modalPopup.scss';
+@import 'footer.scss';
