@@ -146,68 +146,68 @@ $(window).scroll(function (event) {
 
 	}
 });
-function openAbout() {
-	$('.headerTxt').empty();
-	$('.typed-cursor').remove();
-	$('.headerTxt').addClass('aboutHead').removeClass('headerTxt');
-	$('.navWrapper').addClass('activeAbout').animate({
-		top: '100%',
-		opacity: 0
-	}), 100;
-	$('main, footer, filterButton').css({
-		'top': '100%',
-		"@include": "transitions('500ms')",
-		"opacity": 0
-	});
-	$('.header, .overlay').animate({
-		height: '100vh',
-		'background-height': '100vh'
-	});
-	$('.aboutContent, .returnArrow').delay(500).css('display','flex').animate({
-			opacity: 1
-		});
-	var aboutHead = new Typed('.aboutHead', {
-		strings: ["<span>About</span>"],
-		//'We Are Creating Ties', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
-		typeSpeed: 50,
-		backSpeed: 10,
-		smartBackspace: true,
-		backDelay: 800,
-		loop: false,
-	});
-};
-function closeAbout() {
-	$('.aboutHead').empty();
-	$('.typed-cursor').remove();
-	$('.aboutHead').addClass('headerTxt').removeClass('aboutHead');
-	$('.navWrapper').removeClass('activeAbout').animate({
-		opacity: 1,
-		top: ''
-	}), 100;
-	$('main, footer, filterButton').animate({
-		'top': '',
-		'opacity': 1,
-	}), 500;
-	$('.header, .overlay').animate({
-		height: 200,
-		'background-height': ''
-	}), 500;
-	$('.aboutContent, .returnArrow').delay(500).css('display','none').animate({
-			opacity: 0
-		});
-		var headerTxt = new Typed('.headerTxt', {
-			strings: ["<span>infinish.ed</span>"],
-			//'We Are Creating Ties', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
-			typeSpeed: 50,
-			backSpeed: 10,
-			smartBackspace: true,
-			backDelay: 800,
-			loop: false,
-		});
-};
+// function openAbout() {
+// 	$('.headerTxt').empty();
+// 	$('.typed-cursor').remove();
+// 	$('.headerTxt').addClass('aboutHead').removeClass('headerTxt');
+// 	$('.navWrapper').addClass('activeAbout').animate({
+// 		top: '100%',
+// 		opacity: 0
+// 	}), 100;
+// 	$('main, footer, filterButton').css({
+// 		'top': '100%',
+// 		"@include": "transitions('500ms')",
+// 		"opacity": 0
+// 	});
+// 	$('.header, .overlay').animate({
+// 		height: '100vh',
+// 		'background-height': '100vh'
+// 	});
+// 	$('.aboutContent, .returnArrow').delay(500).css('display','flex').animate({
+// 			opacity: 1
+// 		});
+// 	var aboutHead = new Typed('.aboutHead', {
+// 		strings: ["<span>About</span>"],
+// 		//'We Are Creating Ties', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
+// 		typeSpeed: 50,
+// 		backSpeed: 10,
+// 		smartBackspace: true,
+// 		backDelay: 800,
+// 		loop: false,
+// 	});
+// };
+// function closeAbout() {
+// 	$('.aboutHead').empty();
+// 	$('.typed-cursor').remove();
+// 	$('.aboutHead').addClass('headerTxt').removeClass('aboutHead');
+// 	$('.navWrapper').removeClass('activeAbout').animate({
+// 		opacity: 1,
+// 		top: ''
+// 	}), 100;
+// 	$('main, footer, filterButton').animate({
+// 		'top': '',
+// 		'opacity': 1,
+// 	}), 500;
+// 	$('.header, .overlay').animate({
+// 		height: 200,
+// 		'background-height': ''
+// 	}), 500;
+// 	$('.aboutContent, .returnArrow').delay(500).css('display','none').animate({
+// 			opacity: 0
+// 		});
+// 		var headerTxt = new Typed('.headerTxt', {
+// 			strings: ["<span>infinish.ed</span>"],
+// 			//'We Are Creating Ties', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
+// 			typeSpeed: 50,
+// 			backSpeed: 10,
+// 			smartBackspace: true,
+// 			backDelay: 800,
+// 			loop: false,
+// 		});
+// };
 
 //not working alert
-$(".login").click(function(){
+$(".about, .login").click(function(){
 	alert("Coming Soon!");
 });
 
